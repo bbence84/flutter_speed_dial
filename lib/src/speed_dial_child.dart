@@ -21,6 +21,7 @@ class SpeedDialChild {
   final double elevation;
   final VoidCallback onTap;
   final ShapeBorder shape;
+  final Key key;
 
   SpeedDialChild({
     this.label,
@@ -33,5 +34,6 @@ class SpeedDialChild {
     this.elevation,
     this.onTap,
     this.shape,
+    this.key,
   });
 }

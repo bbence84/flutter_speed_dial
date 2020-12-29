@@ -60,6 +60,8 @@ class SpeedDial extends StatefulWidget {
 
   final Stream<bool> openedController;
 
+  final Key key;
+
   SpeedDial(
       {this.children = const [],
       this.visible = true,
@@ -82,7 +84,8 @@ class SpeedDial extends StatefulWidget {
       this.curve = Curves.linear,
       this.onPress,
       this.animationSpeed = 150,
-      this.openedController});
+      this.openedController,
+      this.key});
 
   @override
   _SpeedDialState createState() => _SpeedDialState();
@@ -164,6 +167,7 @@ class _SpeedDialState extends State<SpeedDial>
           );
 
           return AnimatedChild(
+            key: child.key,
             animation: childAnimation,
             index: index,
             visible: _open,
@@ -220,6 +224,7 @@ class _SpeedDialState extends State<SpeedDial>
     var fabChildren = _getChildrenList();
 
     var animatedFloatingButton = AnimatedFloatingButton(
+      key: widget.key,
       visible: widget.visible,
       tooltip: widget.tooltip,
       backgroundColor: widget.backgroundColor,
