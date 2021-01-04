@@ -92,13 +92,13 @@ class AnimatedChild extends AnimatedWidget {
         children: <Widget>[
           buildLabel(),
           Container(
-            width: 62.0,
+            width: 40.0,
             height: animation.value,
-            padding: EdgeInsets.only(bottom: 62.0 - animation.value),
+            padding: EdgeInsets.only(bottom: 40.0 - animation.value),
             child: Container(
-              height: 62.0,
+              height: 40.0,
               width: animation.value,
-              padding: EdgeInsets.only(top: 4.0, bottom: 4.0),
+              padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
               child: FloatingActionButton(
                 heroTag: heroTag,
                 onPressed: _performAction,
