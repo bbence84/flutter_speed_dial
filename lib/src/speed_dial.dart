@@ -240,7 +240,7 @@ class _SpeedDialState extends State<SpeedDial>
     );
 
     return Positioned(
-      bottom: widget.marginBottom - 16,
+      bottom: widget.marginBottom - 8,
       right: widget.marginRight - 16,
       child: Container(
         child: Column(
