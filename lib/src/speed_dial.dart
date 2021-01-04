@@ -240,7 +240,7 @@ class _SpeedDialState extends State<SpeedDial>
     );
 
     return Positioned(
-      bottom: widget.marginBottom - 100,
+      bottom: widget.marginBottom - 16,
       right: widget.marginRight - 16,
       child: Container(
         child: Column(
@@ -249,7 +249,7 @@ class _SpeedDialState extends State<SpeedDial>
           children: List.from(fabChildren)
             ..add(
               Container(
-                margin: EdgeInsets.only(top: 8.0, right: 2.0),
+                margin: EdgeInsets.only(top: 0.0, right: 2.0),
                 child: animatedFloatingButton,
               ),
             ),
